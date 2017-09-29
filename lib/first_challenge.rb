@@ -13,10 +13,10 @@ def first_challenge
     }
   }
 
-  contacts["Freddy Mercury"].each do |attributes, values|
-    if attributes == :favorite_icecream_flavors
-      values.delete_if do |flavors|
-        flavors == "strawberry"
+  contacts["Freddy Mercury"].each do |attribute, value|
+    if attribute == :favorite_icecream_flavors
+      value.delete_if do |flavor|
+        flavor == "strawberry"
       end
     end
   end
